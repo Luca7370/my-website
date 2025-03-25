@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" onerror="alert('Failed to load style.css. Please check the file path.')">
 </head>
 <body>
     <header>
@@ -16,9 +16,12 @@
     <footer>
         <p>&copy; 2025 My Website</p>
     </footer>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dMXJHw2z8s4?si=cIsUZ_9XjcYKeFCv" 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dMXJHw2z8s4" 
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
+    <noscript>
+        <p>Your browser does not support JavaScript or the video could not be loaded. Please check your connection or try again later.</p>
+    </noscript>
 </body>
 </html>
